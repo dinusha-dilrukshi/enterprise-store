@@ -63,7 +63,7 @@ public class JaggeryExecutorHandler extends Handler {
 
             //requestContext.getRegistry().put(path,requestContext.getResource());
 
- 	   if(!requestContext.getResource().getProperties().containsKey("overridden_permissions")) {
+	    if(!requestContext.getResource().getProperties().containsKey("overridden_permissions")) {
                 stateExecutor.executePermissions(userRealm,dynamicValueInjector,path,toState);
             }
 
